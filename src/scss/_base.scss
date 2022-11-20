@@ -53,3 +53,15 @@ a {
     left: 30px;
   }
 }
+
+.splitter {
+  background: url(../assets/images/splitter.png) repeat-x;
+  clear: both;
+  display: block;
+  float: left;
+  height: 10px;
+  margin: 30px 0;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
