@@ -13,6 +13,13 @@
   }
 
   &__info {
+    .fa-h-square {
+      color: $orange;
+    }
+    .fa-whatsapp {
+      color: $green;
+    }
+
     p {
       margin-bottom: 5px;
     }
