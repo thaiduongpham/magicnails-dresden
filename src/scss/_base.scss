@@ -9,9 +9,19 @@ body {
 
 a {
   color: $white;
-  // text-decoration: underline;
   &:hover {
     color: $pink;
+  }
+
+  &.link-button {
+    font-size: 14px;
+    padding: 20px 25px;
+    display: inline-block;
+    background: $purple;
+    &:hover {
+      text-decoration: none;
+      color: $white;
+    }
   }
 }
 
