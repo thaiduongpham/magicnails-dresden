@@ -108,6 +108,7 @@ a.link-button:hover {
   border: 2px solid transparent;
   margin: 0 12px;
   border-radius: 24px;
+  z-index: 9999;
 }
 .navbar .nav-item:hover, .navbar .nav-item.active {
   transition: all 0.3s ease;
@@ -239,6 +240,19 @@ a.link-button:hover {
 
 .galery__slide {
   margin: 10px auto 30px;
+}
+
+.imprint h2 {
+  margin-top: 45px;
+}
+.imprint h2:first-child {
+  margin-top: 5px;
+}
+.imprint .contact {
+  line-height: 1.7;
+}
+.imprint .contact a {
+  color: #000;
 }
 
 /*# sourceMappingURL=main.css.map */
