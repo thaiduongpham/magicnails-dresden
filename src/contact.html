@@ -66,47 +66,66 @@
     <main role="main" class="contact page__content">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">contact 001</div>
-          <div class="col-lg-6">
-            <div class="column dt-sc-one-third">
-              <h3>Kontaktinformationen</h3>
-              <div class="dt-sc-appointment">
-                <p class="dt-sc-contact-info address">
-                  <i class="fa fa-pagelines"></i><span>Leipziger Straße 107 &nbsp; 01127 Dresden</span>
-                </p>
-                <div class="dt-sc-clear"></div>
-                <p class="dt-sc-contact-info"><i class="fa fa-phone"></i>Phone : <span>(+49) 152 251 98 108</span></p>
-                <p class="dt-sc-contact-info">
-                  <i class="fa fa-envelope"></i>Email :
-                  <a href="mailto:info@magicnails-dresden.de">info@magicnails-dresden.de</a>
-                </p>
+          <div class="col-lg-6 map">
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe
+                  width="600"
+                  height="500"
+                  id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=Leipziger%20Stra%C3%9Fe%20107%2001127%20Dresden&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                ></iframe
+                ><a href="https://123movies-to.org">123movies</a><br /><style>
+                  .mapouter {
+                    position: relative;
+                    text-align: right;
+                    height: 500px;
+                    width: 600px;
+                  }</style
+                ><a href="https://www.embedgooglemap.net">adding google map to wordpress</a
+                ><style>
+                  .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 500px;
+                    width: 600px;
+                  }
+                </style>
               </div>
-              Besuchen Sie uns auf Facebook&nbsp;<a
-                class="synved-social-button synved-social-button-follow synved-social-size-32 synved-social-resolution-single synved-social-provider-facebook nolightbox"
-                target="_blank"
-                rel="nofollow"
-                title="https://www.facebook.com/magicnailsgermany"
-                href="https://www.facebook.com/magicnails.dresden"
-                style="font-size: 0px; width: 32px; height: 32px; margin: 0; margin-bottom: 5px"
-                ><img
-                  alt="Facebook"
-                  title="https://www.facebook.com/magicnailsgermany"
-                  class="synved-share-image synved-social-image synved-social-image-follow"
-                  width="32"
-                  height="32"
-                  style="
-                    display: inline;
-                    width: 32px;
-                    height: 32px;
-                    margin: 0;
-                    padding: 0;
-                    border: none;
-                    box-shadow: none;
-                  "
-                  src="http://magicnails-dresden.de/wp-content/plugins/social-media-feather/synved-social/addons/extra-icons/image/social/wheel/64x64/facebook.png"
-              /></a>
-              <p></p>
             </div>
+          </div>
+
+          <div class="col-lg-6">
+            <h3>Kontaktinformationen</h3>
+            <div class="appointment">
+              <p class="contact-info address">
+                <i class="fa fa-lg fa-location-dot"></i>
+                Leipziger Straße 107, 01127 Dresden
+              </p>
+              <p class="contact-info"><i class="fa fa-phone"></i><span>(+49) 152 251 98 108</span></p>
+              <p class="contact-info">
+                <i class="fa fa-envelope fa-lg"></i>
+                <a href="mailto:info@magicnails-dresden.de" title="">info@magicnails-dresden.de</a>
+              </p>
+              <p class="contact-info">
+                <a
+                  class="facebook-link"
+                  target="_blank"
+                  rel="nofollow"
+                  title="https://www.facebook.com/magicnailsgermany"
+                  href="https://www.facebook.com/magicnails.dresden"
+                >
+                  <i class="fa-brands fa-lg fa-facebook"></i>
+                </a>
+                Besuchen Sie uns auf Facebook
+              </p>
+            </div>
+
+            <p></p>
           </div>
         </div>
       </div>
@@ -153,6 +172,6 @@
     <script>
       window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>');
     </script>
-    <!-- <script src="../../dist/js/bootstrap.min.js"></script> -->
+    <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
