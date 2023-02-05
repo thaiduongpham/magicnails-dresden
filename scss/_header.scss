@@ -16,6 +16,10 @@
     z-index: 99;
   }
 
+  .navbar-toggler {
+    border: none;
+  }
+
   &__title {
     color: rgba(255, 255, 255, 0.32);
     width: 100%;
@@ -26,12 +30,33 @@
   }
 
   .navbar__content {
-    display: flex;
-    padding: 15px 30px 30px;
     width: 100%;
+    padding: 15px 30px 30px;
+    position: relative;
+
+    @media screen and (min-width: 1024px) {
+      display: flex;
+    }
+
+    .navbar-toggler {
+      position: absolute;
+      right: 15px;
+      margin-top: 15px;
+      z-index: 999;
+    }
 
     &__right {
-      margin-left: 200px;
+      @media screen and (max-width: 768px) {
+        margin-top: 30px;
+      }
+
+      @media screen and (min-width: 769px) and (max-width: 1239px) {
+        margin-left: 100px;
+      }
+
+      @media screen and (min-width: 1240px) {
+        margin-left: 200px;
+      }
     }
   }
 
@@ -40,11 +65,20 @@
     margin: 0 12px;
     border-radius: 24px;
     z-index: 9999;
+    @media screen and (max-width: 1240px) {
+      margin: 0 8px;
+    }
 
     &:hover,
     &.active {
-      transition: all 0.3s ease;
-      border: 2px solid $white;
+      @media screen and (min-width: 769px) {
+        transition: all 0.3s ease;
+        border: 2px solid $white;
+      }
+
+      @media screen and (max-width: 768px) {
+        font-weight: bold;
+      }
     }
 
     .nav-link {

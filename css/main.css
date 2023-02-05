@@ -88,6 +88,9 @@ a.link-button:hover {
   width: 290px;
   z-index: 99;
 }
+.navbar .navbar-toggler {
+  border: none;
+}
 .navbar__title {
   color: rgba(255, 255, 255, 0.32);
   width: 100%;
@@ -97,12 +100,35 @@ a.link-button:hover {
   font-family: "Tangerine", cursive;
 }
 .navbar .navbar__content {
-  display: flex;
-  padding: 15px 30px 30px;
   width: 100%;
+  padding: 15px 30px 30px;
+  position: relative;
 }
-.navbar .navbar__content__right {
-  margin-left: 200px;
+@media screen and (min-width: 1024px) {
+  .navbar .navbar__content {
+    display: flex;
+  }
+}
+.navbar .navbar__content .navbar-toggler {
+  position: absolute;
+  right: 15px;
+  margin-top: 15px;
+  z-index: 999;
+}
+@media screen and (max-width: 768px) {
+  .navbar .navbar__content__right {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1239px) {
+  .navbar .navbar__content__right {
+    margin-left: 100px;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .navbar .navbar__content__right {
+    margin-left: 200px;
+  }
 }
 .navbar .nav-item {
   border: 2px solid transparent;
@@ -110,9 +136,21 @@ a.link-button:hover {
   border-radius: 24px;
   z-index: 9999;
 }
-.navbar .nav-item:hover, .navbar .nav-item.active {
-  transition: all 0.3s ease;
-  border: 2px solid #fff;
+@media screen and (max-width: 1240px) {
+  .navbar .nav-item {
+    margin: 0 8px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .navbar .nav-item:hover, .navbar .nav-item.active {
+    transition: all 0.3s ease;
+    border: 2px solid #fff;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar .nav-item:hover, .navbar .nav-item.active {
+    font-weight: bold;
+  }
 }
 .navbar .nav-item .nav-link {
   font-size: 14px;
@@ -133,6 +171,16 @@ a.link-button:hover {
   font-family: "Raleway", sans-serif;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 767px) {
+  .footer__title {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer .col-md-4 {
+    margin-bottom: 30px;
+  }
+}
 .footer__info .fa-h-square {
   color: #ffbf00;
 }
@@ -148,6 +196,11 @@ a.link-button:hover {
 .footer .fa {
   margin-right: 3px;
   margin-bottom: 5px;
+}
+@media screen and (max-width: 1023px) {
+  .footer a img {
+    width: 240px;
+  }
 }
 
 .page__content {
